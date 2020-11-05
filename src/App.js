@@ -10,15 +10,17 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './css/style.css';
 import HomePage from './components/HomepPage';
 import ParcelsPage from './components/ParcelsPage';
+import information from './fakeDB.json';
 
 export default function App() {
 
-  const [status, setStatus] = useState(0);
-    const [information, setInformation] = useState([]);
+  {/* Note: The following fetch functionality has been tested. */ }
+  {/* In order to not accidentally break the sever, the data to be used is saved in a local file. */ }
 
+  {/* 
     const endpoint = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
-    
-
+    const [status, setStatus] = useState(0);
+    const [information, setInformation] = useState([]);
     const getData = async () => {
         try {
             const response = await fetch(endpoint, { mode: "cors" });
@@ -35,16 +37,17 @@ export default function App() {
     useEffect(() => {
         getData();
     }, []);
+  */}
 
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/" exact>
-            <HomePage information={information} status={status}/>
+          <Route exact path="/" >
+            <HomePage information={information}/>
           </Route>
-          <Route path="/parcels">
-            <ParcelsPage information={information} status={status}/>
+          <Route exact path="/parcels">
+            <ParcelsPage information={information}/>
           </Route>
         </Switch>
       </div>

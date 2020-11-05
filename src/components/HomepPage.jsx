@@ -1,14 +1,12 @@
 // React core
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 // Components
 import Header from "../components/Header";
 
 
-export default function HomePage({information}) {
-    
-
+export default function HomePage() {
 
     return (
         <div className="home-page">
