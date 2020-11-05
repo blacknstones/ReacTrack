@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Parcel from './Parcel';
+import SearchBar from './SearchBar';
 
 
 export default function ParcelsPage({ information }) {
@@ -11,6 +12,7 @@ export default function ParcelsPage({ information }) {
     return (
         <div className="parcels-page">
             <Header />
+            <SearchBar/>
             <div>{Parcels}</div>
         </div>
     );
