@@ -1,13 +1,20 @@
+// React core
+import React from 'react';
+
+// Components
+import Header from './components/Header';
 
 
-function App() {
+
+// Other imports
+import './css/style.css';
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <hi>ReacTrack</hi>
-      </header>
+      <Header/>
     </div>
   );
 }
 
-export default App;
+
