@@ -1,19 +1,32 @@
 // React core
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
-import Header from './components/Header';
 
 
 
 // Other imports
 import './css/style.css';
+import HomePage from './components/HomepPage';
 
 export default function App() {
+
+  
+
+
   return (
-    <div className="App">
-      <Header/>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+
+
   );
 }
 
