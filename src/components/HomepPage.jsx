@@ -3,11 +3,17 @@ import React, { useState, useEffect } from 'react';
 
 // Components
 import Header from "../components/Header";
+import Parcel from "../components/Parcel";
 
 export default function HomePage() {
     const [status, setStatus] = useState(0);
     const [information, setInformation] = useState([]);
+    const [showParcels, setShowParcels] = useState(false);
+
     const endpoint = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
+    const Parcels = information.map((item)=> {
+        return <Parcel key={item.id} data={item}/>
+    })
 
     const getData = async () => {
         try {
@@ -36,7 +42,9 @@ export default function HomePage() {
         <div className="home-page">
             <Header />
             <h1>Home page</h1>
-            <button onClick={getData}>All Packages</button>
+            <button onClick={() => setShowParcels(!showParcels)}>All Packages</button>
+    <div>{showParcels && Parcels}</div>
+            
         </div>
     );
 
