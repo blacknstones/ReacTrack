@@ -3,14 +3,14 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
-
-
-
-// Other imports
-import './css/style.css';
 import HomePage from './components/HomepPage';
 import ParcelsPage from './components/ParcelsPage';
 import information from './fakeDB.json';
+import DetailPage from './components/DetailPage';
+
+// Other imports
+import './css/style.css';
+
 
 export default function App() {
 
@@ -48,6 +48,10 @@ export default function App() {
           </Route>
           <Route exact path="/parcels">
             <ParcelsPage information={information}/>
+          </Route>
+          <Route exact path="/parcels/:match_id">
+            <DetailPage information={information}/>
+
           </Route>
         </Switch>
       </div>

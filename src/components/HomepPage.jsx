@@ -18,9 +18,6 @@ export default function HomePage() {
                 All Parcels
             </Link>
             <p>Your parcels will be displayed here.</p>
-
-
-
         </div>
     );
 
