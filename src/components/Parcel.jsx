@@ -33,6 +33,6 @@ export default function Parcel({ data }) {
                 
             </Link>
         </article>
-    )
+    );
 
 }

@@ -2,11 +2,13 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import Header from './Header';
+import ParcelDetail from './ParcelDetail';
 
 export default function DetailPage({ information }) {
     const { match_id } = useParams();
 
-    const matchedItem = information.filter((item) => item.parcel_id.match(match_id));
+    {/* The filter function will return an array with one object */}
+    const matchedItem = information.filter((item) => item.parcel_id.match(match_id))[0];
 
     if (!matchedItem) {
         return (
@@ -14,11 +16,12 @@ export default function DetailPage({ information }) {
         );
     }
 
+
     return (
         <div className="detail-page">
             <Header />
             <button>Go back home</button>
-            <parcelDetail />
+            <ParcelDetail matchedItem={ matchedItem }/>
 
         </div>
         
