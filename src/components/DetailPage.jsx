@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 import Header from './Header';
 import ParcelDetail from './ParcelDetail';
@@ -16,11 +16,10 @@ export default function DetailPage({ information }) {
         );
     }
 
-
     return (
         <div className="detail-page">
             <Header />
-            <button>Go back home</button>
+            <Link to={"/parcels"}>Go back</Link>
             <ParcelDetail matchedItem={ matchedItem }/>
 
         </div>
