@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Parcel({ data }) {
     const {
@@ -17,12 +18,18 @@ export default function Parcel({ data }) {
         last_updated
     } = data;
 
+
+
+ 
+
     return (
         <article className="parcel">
+            <Link to={`/parcels/id:${parcel_id}`}>
             <p>Sender: {sender}</p>
             <p>ID: {parcel_id}</p>
             <p>Status:{status}</p>
-            <p>Notes: {notes}</p>
+            <p>estimated time of arrival: {eta}</p>
+            </Link>
         </article>
     )
 
