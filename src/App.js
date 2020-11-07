@@ -8,8 +8,8 @@ import information from './fakeDB.json';
 // Components
 import HomePage from './components/HomepPage';
 import ParcelsPage from './components/ParcelsPage';
-
 import DetailPage from './components/DetailPage';
+import AboutPage from './components/AboutPage';
 
 // Other imports
 import './css/style.css';
@@ -57,6 +57,9 @@ export default function App() {
           </Route>
           <Route exact path="/parcels/:match_id">
             <DetailPage information={information}/>
+          </Route>
+          <Route exact path="/about">
+            <AboutPage />
           </Route>
         </Switch>
       </div>
