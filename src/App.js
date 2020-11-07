@@ -50,7 +50,7 @@ export default function App() {
       <div className="App">
         <Switch>
           <Route exact path="/" >
-            <HomePage information={information}/>
+            <HomePage information={information} />
           </Route>
           <Route exact path="/parcels">
             <ParcelsPage status={status} information={information}/>

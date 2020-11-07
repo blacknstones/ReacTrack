@@ -12,12 +12,14 @@ export default function HomePage() {
     return (
         <div className="home-page">
             <Header />
-            <SearchBar />
+            <div className="main-content">
+                <SearchBar />
+                <Link className="link" to="/parcels">
+                    All Parcels
+                </Link>
+                <p>Your parcels will be displayed here.</p>
+            </div>
 
-            <Link className="link" to="/parcels">
-                All Parcels
-            </Link>
-            <p>Your parcels will be displayed here.</p>
         </div>
     );
 

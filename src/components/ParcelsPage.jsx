@@ -6,16 +6,18 @@ import Filters from './Filters';
 
 export default function ParcelsPage({ status, information }) {
 
-    
-    
+
+
 
     return (
         <div className="parcels-page">
             <Header />
-            <SearchBar/>
-            
-            {status === 1 ? <Filters information={information} /> : <p>No parcels to show.</p>}
-            
+            <div className="main-content">
+                <SearchBar />
+                {status === 1 ? <Filters information={information} /> : <p>No parcels to show.</p>}
+            </div>
+
+
         </div>
     );
 }

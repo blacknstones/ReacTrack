@@ -3,19 +3,34 @@ import { Link } from 'react-router-dom';
 
 export default function NavBar() {
     const [click, setClick] = useState(false);
+    const [dropDown, setDropDown] = useState(false);
 
     const handleClick = () => setClick(!click);
 
+    const closeMenu = () => setClick(false);
+
     return (
         <nav className="navbar">
-            <Link className="link nav-link" to="/">Home</Link>
-            <Link className="link nav-link" to="/parcels">All Parcels</Link>
-            <Link className="link nav-link" to="/about">About</Link>
-
-            <div className="menu-icon" onClick={handleClick}>
+            
+            <div className=" link menu-icon" onClick={handleClick}>
                 {/* FontAwesome Icon */}
                 <i className={click ? "fas fa-times" : "fas fa-bars"} />
             </div>
+
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+                <li className="nav-item">
+                    <Link className="link nav-link" to="/" onClick={closeMenu}>Home</Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link className="link nav-link" to="/parcels" onClick={closeMenu}>All parcels</Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link className="link nav-link" to="/about" onClick={closeMenu}>About</Link>
+                </li>
+
+            </ul>
         </nav>
     );
 
