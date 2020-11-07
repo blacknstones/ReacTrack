@@ -9,7 +9,7 @@ export default function SearchBar() {
     return (
         <div className="search-bar">
             <input placeholder="Search with parcel ID" value={query} onChange={(event) => setQuery(event.target.value)} />
-            <Link to={`/parcels/${query}`}>Search</Link>
+            <Link className="link" to={`/parcels/${query}`}>Search</Link>
         </div>
     );
 }
