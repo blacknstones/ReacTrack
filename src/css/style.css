@@ -1,18 +1,34 @@
 @import url("./reset.css");
 @import url("./header.css");
-@import url("./card.css");
+@import url("./parcel.css");
+@import url("./home-page.css");
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@300;400;600;800&display=swap');
+
+/* 
+font-family: 'Open Sans', sans-serif; //font-weight: 300/400
+font-family: 'Raleway', sans-serif; //font-weight: 300/400/800 
+*/
+:root {
+    --theme-green:#ACC1AE;
+    --theme-orange: #F7C48D;
+    --theme-color-lightgreen: #B9CABB;
+    --theme-pink: #ded6d1;
+    --theme-dark-green: #A2B9A4;
+}
 
 body {
-    background-color:  #ACC0A0;
+    background-color:  var(--theme-green); 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
 }
 
 .link {
     text-decoration: none;
 }
 
-.navbar {
-    display: flex;
-    justify-content: flex-end;
 
-}
+
+
 
