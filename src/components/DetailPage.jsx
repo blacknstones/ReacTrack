@@ -12,6 +12,7 @@ export default function DetailPage({ information }) {
     const format = RegExp(/^\d{4}$/);
     const isValid = format.test(match_id);
 
+    {/* for testing */}
     console.log(match_id);
     console.log(isValid);
 
@@ -21,7 +22,7 @@ export default function DetailPage({ information }) {
     return (
         <div className="detail-page">
             <Header />
-            <Link to={"/parcels"}>Go back</Link>
+            <Link className="link go-back" to={"/parcels"}>Go back</Link>
             {isValid && matchedItem ? <ParcelDetail matchedItem={matchedItem} /> : <p>Parcel not found!</p>}
         </div>
 
