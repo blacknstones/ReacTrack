@@ -42,6 +42,9 @@ export default function App() {
     }, []);
   */}
 
+  // delete this line of code after final stage of testing
+  const status = 1;
+
   return (
     <Router>
       <div className="App">
@@ -50,7 +53,7 @@ export default function App() {
             <HomePage information={information}/>
           </Route>
           <Route exact path="/parcels">
-            <ParcelsPage information={information}/>
+            <ParcelsPage status={status} information={information}/>
           </Route>
           <Route exact path="/parcels/:match_id">
             <DetailPage information={information}/>
