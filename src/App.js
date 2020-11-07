@@ -2,10 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+// Data
+import information from './fakeDB.json';
+
 // Components
 import HomePage from './components/HomepPage';
 import ParcelsPage from './components/ParcelsPage';
-import information from './fakeDB.json';
+
 import DetailPage from './components/DetailPage';
 
 // Other imports
@@ -51,7 +54,6 @@ export default function App() {
           </Route>
           <Route exact path="/parcels/:match_id">
             <DetailPage information={information}/>
-
           </Route>
         </Switch>
       </div>
