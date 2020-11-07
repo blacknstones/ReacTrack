@@ -15,10 +15,10 @@ export default function Filters({information}) {
     return (
         <div className="filters">
             <h1>display by:</h1>
-            <button onClick={() => setParcels(sortParcels("parcel_id"))}>ID</button>
-            <button onClick={() => setParcels(sortParcels("status"))}>Status</button>
-            <button onClick={() => setParcels(sortParcels("sender"))}>Sender</button>
-            <button onClick={() => setParcels(sortParcels("eta"))}>Estimated time of arrival</button>
+            <button className="button" onClick={() => setParcels(sortParcels("parcel_id"))}>ID</button>
+            <button className="button" onClick={() => setParcels(sortParcels("status"))}>Status</button>
+            <button className="button" onClick={() => setParcels(sortParcels("sender"))}>Sender</button>
+            <button className="button" onClick={() => setParcels(sortParcels("eta"))}>Estimated time of arrival</button>
             <div className="grid">{Parcels}</div>
 
         </div>

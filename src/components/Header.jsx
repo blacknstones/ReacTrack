@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import NavBar from './NavBar';
+
 
 export default function Header() {
+
+
     return (
         <header className="header">
-            <h1>ReacTrack</h1>         
+            <Link className="link logo" to="/">ReacTrack</Link>
+            <NavBar />
         </header>
     );
 }

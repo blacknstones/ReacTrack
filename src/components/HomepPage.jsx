@@ -14,7 +14,7 @@ export default function HomePage() {
             <Header />
             <SearchBar />
 
-            <Link className="button" to="/parcels">
+            <Link className="link" to="/parcels">
                 All Parcels
             </Link>
             <p>Your parcels will be displayed here.</p>
