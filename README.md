@@ -13,14 +13,32 @@ The dependencies of the project is shown below:
 ## Design Features
 ### Dropdown Menu
 Click on the button on the upper right corner to open dropdown menu.
+
 ![DropDown-1](src/assets/nav-1.png)
 ![DropDown-2](src/assets/nav-2.png)
 
 ### Search Bar
 Type the parcel id to get parcel details. 
+
 ![search-1](src/assets/search.png)
+
 ![search-2](src/assets/search-result.png)
+
+Invalid parcel id will not match any parcel.
 ![search-3](src/assets/not-found.png)
 
 
-![]()
+### All Parcels Page
+Click **All Parcels** menu to show all parcels:
+
+![all-parcels](src/assets/all-package.png)
+
+
+Click filter buttons to display parcels in specific order:
+
+![filter](src/assets/filter.png)
+
+
+### Parcel Detail Page
+Click parcel card to show details.
+![detail-page](src/assets/detail-page.png)
