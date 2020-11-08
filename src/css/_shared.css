@@ -1,0 +1,14 @@
+body {
+    background-color:  var(--theme-green); 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 4vh;
+}

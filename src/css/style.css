@@ -1,10 +1,16 @@
 @import url("./reset.css");
 @import url("./header.css");
-@import url("./parcel.css");
+@import url("./parcel-card.css");
 @import url("./home-page.css");
 @import url('./navbar.css');
 @import url('./search-bar.css');
 @import url('./button.css');
+@import url('./filters.css');
+@import url('./detail-page.css');
+@import url('./_variables.css');
+@import url('./_shared.css');
+
+
 
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@300;400;600;800&display=swap');
@@ -13,29 +19,7 @@
 font-family: 'Open Sans', sans-serif; //font-weight: 300/400
 font-family: 'Raleway', sans-serif; //font-weight: 300/400/800 
 */
-:root {
-    --theme-green:#87A794;
-  
-    --theme-lighter-green: #92AF9E;
-    --theme-light-green: #A5BDAF;
-    --theme-dark-green: #455959;
-    --theme-orange: #F7C48D;
 
-}
-
-body {
-    background-color:  var(--theme-lighter-green); 
-    font-family: 'Open Sans', sans-serif; 
-    font-weight: 400;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.main-content {
-    padding: 3vh;
-}
 
 
 

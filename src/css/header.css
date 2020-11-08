@@ -1,6 +1,6 @@
 .header {
     height: 10vh;
-    background-color: var(--theme-green);
+    background-color: var(--header-green);
     display: flex;
     flex-direction: column; 
 }

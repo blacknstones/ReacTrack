@@ -48,10 +48,12 @@
     text-align: center;
     justify-content: space-around;
     align-items: center;
+    padding-top: 2vh;
+    font-size: 15px;
   }
 
   .nav-menu.active {
-    background: var(--theme-dark-green);
+    background: var(--header-green);
     top: 10vh;
     z-index: 1;
   }

@@ -1,16 +1,23 @@
+.search-bar {
+    margin-bottom: 2vh;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 
 .search-bar input {
-    font-size: 15px;
     padding: 4px;
+    border-radius: 15px;
     background: white;
-    border-radius: 1px;
     margin-right: 7px;
 }
 
 .search-bar .search-link {
     text-decoration: none;
     color: white;
+    
 }
 
 

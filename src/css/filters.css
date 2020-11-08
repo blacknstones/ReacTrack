@@ -1,0 +1,34 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filters .filter-info {
+    color: var(--text-green);
+    margin-bottom: 1vh;
+
+}
+
+.filters .filter-buttons {
+    margin-bottom: 2vh;
+}
+
+.filters .parcels {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Desktop*/
+@media (min-width: 750px) {
+    .filters .parcels {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .parcel-card {
+        margin: 2vh;
+    }
+    
+}
+
+
+
