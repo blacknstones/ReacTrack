@@ -17,15 +17,26 @@ export default function ParcelDetail({ matchedItem }) {
 
 
     return (
-        <article className="parcel-detail">
-            <p>ID: {parcel_id}</p>
-            <p>Sender: {sender}</p>
-            <p>Status:{status}</p>
-            <p>Estimated time of arrival: {eta}</p>
-            <p>Require verification : {verification_required ? `yes` : `no`} </p>
-            <p>Location: {location_name}</p>
-            <p>Notes: {notes}</p>
-            <p>Last updated: {last_updated}</p>
+        <article className="parcel-detail parcel-card">
+
+
+            <span className="prompt">ID</span><span>{parcel_id}</span>
+            <br />
+            <span className="prompt">Sender</span><span>{sender}</span>
+            <br />
+
+            <span className="prompt">Status</span><span>{status}</span>
+            <br />
+            <span className="prompt">Estimated time of arrival</span><span>{eta}</span>
+            <br />
+            <span className="prompt">Require verification</span><span>{verification_required ? `yes` : `no`}</span>
+            <br />
+            <span className="prompt">Location</span><span>{location_name}</span>
+            <br />
+            <span className="prompt">Notes</span><span>{notes}</span>
+            <br />
+            <span className="prompt">Last updated</span><span>{last_updated}</span>
+            <br />
 
         </article>
     );
