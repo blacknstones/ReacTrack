@@ -25,6 +25,7 @@ Type the parcel id to get parcel details.
 ![search-2](src/assets/search-result.png)
 
 Invalid parcel id will not match any parcel.
+
 ![search-3](src/assets/not-found.png)
 
 
@@ -40,5 +41,7 @@ Click filter buttons to display parcels in specific order:
 
 
 ### Parcel Detail Page
+
 Click parcel card to show details.
+
 ![detail-page](src/assets/detail-page.png)
