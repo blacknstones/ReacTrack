@@ -21,14 +21,18 @@ export default function DetailPage({ information }) {
     const matchedItem = information.filter((item) => item.parcel_id.match(match_id))[0];
 
     return (
-        <div className="detail-page">
+        <section className="detail-page">
             <Header />
             <div className="main-content">
-                 <Link className="link go-back" to={"/parcels"}>Go back</Link>
-            {isValid && matchedItem ? <ParcelDetail matchedItem={matchedItem} /> : <p>Parcel not found!</p>}
+                <div className="go-back">
+                    <Link className="button link" to={"/parcels"}>Go back</Link>
+                </div>
+                <div className="detail-content">
+                    {isValid && matchedItem ? <ParcelDetail matchedItem={matchedItem} /> : <p className="not-found">Parcel not found!</p>}
+                </div>
             </div>
-           
-        </div>
+
+        </section>
 
     );
 

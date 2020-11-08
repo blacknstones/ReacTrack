@@ -14,7 +14,8 @@ export default function ParcelsPage({ status, information }) {
             <Header />
             <div className="main-content">
                 <SearchBar />
-                {status === 1 ? <Filters information={information} /> : <p>No parcels to show.</p>}
+                {status === 1 ? <Filters information={information} /> : <p className="not-found">No parcels to show.</p>}
+
             </div>
 
 

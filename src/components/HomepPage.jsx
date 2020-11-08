@@ -14,10 +14,10 @@ export default function HomePage() {
             <Header />
             <div className="main-content">
                 <SearchBar />
-                <Link className="link" to="/parcels">
+                <Link className="link button all-parcels" to="/parcels">
                     All Parcels
                 </Link>
-                <p>Your parcels will be displayed here.</p>
+                <p className="display-info">Your parcels will be displayed here.</p>
             </div>
 
         </div>
