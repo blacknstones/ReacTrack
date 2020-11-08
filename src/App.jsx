@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Data for testing
-import information from './fakeDB.json';
+//import information from './fakeDB.json';
 
 // Components
 import HomePage from './components/templates/HomepPage';
@@ -16,7 +16,7 @@ import './css/style.css';
 
 export default function App() {
 
-    /* const endpoint = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
+    const endpoint = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
     const [status, setStatus] = useState(0);
     const [information, setInformation] = useState([]);
     const getData = async () => {
@@ -36,7 +36,7 @@ export default function App() {
     }, []); */
 
   // Add this line for testing with FakeDB
-  const status = 1;
+  // const status = 1;
 
   return (
     <Router>
