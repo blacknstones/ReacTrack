@@ -15,3 +15,12 @@ The dependencies of the project is shown below:
 Click on the button on the upper right corner to open dropdown menu.
 ![DropDown-1](src/assets/nav-1.png)
 ![DropDown-2](src/assets/nav-2.png)
+
+### Search Bar
+Type the parcel id to get parcel details. 
+![search-1](src/assets/search.png)
+![search-2](src/assets/search-result.png)
+![search-3](src/assets/not-found.png)
+
+
+![]()
