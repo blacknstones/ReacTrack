@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 // Components
-import Parcel from '../molecules/ParcelCard';
+import ParcelCard from '../molecules/ParcelCard';
 
 export default function Filters({ information }) {
 
@@ -11,7 +11,7 @@ export default function Filters({ information }) {
     // Sort parcels by input key
     function sortParcels(key) {
         const sortedResults = information.sort((a, b) => (a[key] > b[key] ? 1 : -1));
-        return sortedResults.map((item) => <Parcel key={item.id} data={item} />)
+        return sortedResults.map((item) => <ParcelCard key={item.id} data={item} />)
     }
 
     return (
