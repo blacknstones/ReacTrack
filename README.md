@@ -11,6 +11,15 @@ The dependencies of the project is shown below:
 ![Dependencies](src/assets/dependencies.png)
 
 ## Design Features
+### Responsive Display
+
+This app has a responsive design to fit both mobile device and desktop. 
+
+![desktop](src/assets/desktop.png)
+
+![mobile](src/assets/all-package.png)
+
+
 ### Dropdown Menu
 Click on the button on the upper right corner to open dropdown menu.
 
