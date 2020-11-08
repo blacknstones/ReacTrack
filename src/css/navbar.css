@@ -29,9 +29,13 @@
     font-size: 25px;
     position: absolute;
     top: 3vh;
-    right: 3vh;
-    
+    right: 3vh; 
+}
 
+.nav-link:hover,
+.logo:hover,
+.menu-icon:hover {
+    color: var(--theme-orange);
 }
 
 .nav-menu {
