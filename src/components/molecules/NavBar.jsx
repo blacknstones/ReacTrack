@@ -1,9 +1,9 @@
+// React core
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function NavBar() {
     const [click, setClick] = useState(false);
-    const [dropDown, setDropDown] = useState(false);
 
     const handleClick = () => setClick(!click);
 

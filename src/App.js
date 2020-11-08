@@ -2,25 +2,20 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// Data
-import information from './fakeDB.json';
+// Data for testing
+//import information from './fakeDB.json';
 
 // Components
-import HomePage from './components/HomepPage';
-import ParcelsPage from './components/ParcelsPage';
-import DetailPage from './components/DetailPage';
-import AboutPage from './components/AboutPage';
+import HomePage from './components/templates/HomepPage';
+import ParcelsPage from './components/templates/ParcelsPage';
+import DetailPage from './components/templates/DetailPage';
+import AboutPage from './components/templates/AboutPage';
 
-// Other imports
+// Styling
 import './css/style.css';
-
 
 export default function App() {
 
-  {/* Note: The following fetch functionality has been tested. */ }
-  {/* In order to not accidentally break the sever, the data to be used is saved in a local file. */ }
-
-  {/* 
     const endpoint = "https://my.api.mockaroo.com/orders.json?key=e49e6840";
     const [status, setStatus] = useState(0);
     const [information, setInformation] = useState([]);
@@ -40,10 +35,9 @@ export default function App() {
     useEffect(() => {
         getData();
     }, []);
-  */}
 
-  // delete this line of code after final stage of testing
-  const status = 1;
+  // Add this line for testing with FakeDB
+  //const status = 1;
 
   return (
     <Router>

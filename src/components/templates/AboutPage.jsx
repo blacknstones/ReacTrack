@@ -1,6 +1,9 @@
+// React core
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from './Header';
+
+// Components
+import Header from '../organisms/Header';
 
 export default function AboutPage() {
     return (
@@ -11,12 +14,9 @@ export default function AboutPage() {
                      <Link className="button link" to={"/"}>Go Home</Link>
                 </div>
                <div className="about-content">
-                   <p>This app is powered by <i class="far fa-heart"></i></p>
+                   <p>This app is make by Yanwei and powered by <i class="far fa-heart"></i></p>
                </div>
-                
             </div>
-
-
         </div>
 
     );

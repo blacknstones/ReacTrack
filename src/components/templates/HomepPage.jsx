@@ -3,8 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Components
-import Header from "../components/Header";
-import SearchBar from './SearchBar';
+import Header from "../organisms/Header";
+import SearchBar from '../molecules/SearchBar';
 
 
 export default function HomePage() {

@@ -1,6 +1,8 @@
+// React core
 import React from 'react';
 
 export default function ParcelDetail({ matchedItem }) {
+    // Destruct data
     const {
         status,
         eta,

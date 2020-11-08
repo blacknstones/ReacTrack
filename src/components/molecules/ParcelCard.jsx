@@ -1,7 +1,9 @@
+// React core
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ParcelCard({ data }) {
+    // Destruct data
     const {
         status,
         eta,

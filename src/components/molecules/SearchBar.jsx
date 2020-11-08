@@ -1,10 +1,9 @@
+// React core
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function SearchBar() {
     const [query, setQuery] = useState("");
-
-
 
     return (
         <div className="search-bar">

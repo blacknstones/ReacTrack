@@ -1,14 +1,13 @@
+// React core
 import React from 'react';
-import Header from './Header';
-import SearchBar from './SearchBar';
-import Filters from './Filters';
 
+// Components
+import Header from '../organisms/Header';
+import SearchBar from '../molecules/SearchBar';
+import Filters from '../organisms/Filters';
 
 export default function ParcelsPage({ status, information }) {
-
-
-
-
+    
     return (
         <div className="parcels-page">
             <Header />
