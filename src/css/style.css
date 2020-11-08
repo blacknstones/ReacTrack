@@ -1,15 +1,24 @@
-@import url("./reset.css");
-@import url("./header.css");
-@import url("./parcel-card.css");
-@import url("./home-page.css");
-@import url('./navbar.css');
-@import url('./search-bar.css');
-@import url('./button.css');
-@import url('./filters.css');
-@import url('./detail-page.css');
-@import url('./_variables.css');
-@import url('./_shared.css');
+/* Base */
+@import url('./_base/_shared.css');
+@import url('./_base/_variables.css');
+@import url("./_base/reset.css");
 
+/* Atoms */
+@import url('./atoms/button.css');
+
+/* Molecules */
+@import url("./molecules/navbar.css");
+@import url("./molecules/parcel-card.css");
+@import url('./molecules/search-bar.css');
+
+/* Organisms */
+@import url('./organisms/filters.css');
+@import url("./organisms/header.css");
+
+
+/* Templates */
+@import url('./templates/detail-page.css');
+@import url('./templates/home-page.css');
 
 
 /* Google fonts */

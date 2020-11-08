@@ -31,7 +31,6 @@ export default function App() {
             setStatus(2);
         }
     };
-
     useEffect(() => {
         getData();
     }, []);
