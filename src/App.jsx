@@ -33,7 +33,7 @@ export default function App() {
     };
     useEffect(() => {
         getData();
-    }, []); */
+    }, []); 
 
   // Add this line for testing with FakeDB
   // const status = 1;
