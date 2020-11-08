@@ -12,7 +12,7 @@ export default function Parcel({ data }) {
     return (
         <article className="parcel">
             <Link className="link" to={`/parcels/${parcel_id}`}>    
-                    <p>Sender: {sender}</p>
+                    <span>Sender: </span><span>{sender}</span>
                     <p>ID: {parcel_id}</p>
                     <p>Status:{status}</p>
                     <p>estimated time of arrival: {eta}</p>

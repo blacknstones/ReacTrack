@@ -1,0 +1,16 @@
+
+
+.search-bar input {
+    font-size: 15px;
+    padding: 4px;
+    background: white;
+    border-radius: 1px;
+    margin-right: 7px;
+}
+
+.search-bar .search-link {
+    text-decoration: none;
+    color: white;
+}
+
+
