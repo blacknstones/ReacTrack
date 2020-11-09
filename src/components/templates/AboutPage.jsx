@@ -14,7 +14,7 @@ export default function AboutPage() {
                      <Link className="button link" to={"/"}>Go Home</Link>
                 </div>
                <div className="about-content">
-                   <p>This app is make by Yanwei and powered by <i class="far fa-heart"></i></p>
+                   <p>This app is made by Yanwei and powered by <i class="far fa-heart"></i>.</p>
                </div>
             </div>
         </div>
