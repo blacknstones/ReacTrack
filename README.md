@@ -3,7 +3,7 @@
 A parcel tracking app built with React. 
 
 ## Start app
-1. Install required dependencies with `npm install` 
+1. `npm install` to install required dependencies.
 2. `npm start` to run this app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
