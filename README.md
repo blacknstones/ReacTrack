@@ -2,6 +2,8 @@
 
 A parcel tracking app built with React. 
 
+See demo here: https://reactrack-sda.web.app/
+
 ## Start app
 1. `npm install` to install required dependencies.
 2. `npm start` to run this app in development mode.
