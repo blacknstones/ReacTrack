@@ -9,7 +9,7 @@
 }
 
 .display-info {
-    color: var(--theme-dark-green);
+    color: var(--text-green);
     margin: 25vh 3vh;
     text-align: center;
 }
